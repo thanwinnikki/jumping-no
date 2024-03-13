@@ -4,6 +4,7 @@ import MovingButton from "../components/MovingButton.js";
 import NikkiSmile from "../assets/nikki-smile.jpg";
 import AnnaNoSmile from "../assets/anna-nosmile.jpg";
 import Together from "../assets/together.jpg";
+import Yay from "../assets/yay.png";
 
 function Homepage() {
   const [imgSrc, setimgSrc] = useState(NikkiSmile);
@@ -43,9 +44,16 @@ function Homepage() {
   return (
     <>
       <div className="container">
+        {!noButtonVisible && (
+          <img
+            src={Yay}
+            style={{ height: `20vh`, width: `20vh`, paddingRight: `5vh` }}
+            alt="Changing Pic"
+          />
+        )}
         <div className="centre-container">
           <h1>{topMsg}</h1>
-          <img src={imgSrc} alt="Nikki Smiling" />
+          <img src={imgSrc} alt="Changing Pic" />
           <div className="buttonContainer">
             {noButtonVisible && (
               <button className="yes-button" onClick={handleYesClick}>
@@ -54,8 +62,15 @@ function Homepage() {
             )}
             <MovingButton handleNo={handleNoClick} visble={noButtonVisible} />
           </div>
-          {!noButtonVisible && <h1>I love you.</h1>}
+          {!noButtonVisible && <h1>I love you to the moon!</h1>}
         </div>
+        {!noButtonVisible && (
+          <img
+            src={Yay}
+            style={{ height: `20vh`, width: `20vh`, paddingLeft: `5vh` }}
+            alt="Changing Pic"
+          />
+        )}
       </div>
     </>
   );
