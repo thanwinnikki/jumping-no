@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d793a86.css",
+    "main.js": "/static/js/main.817ba4c3.js",
+    "static/media/yay.png": "/static/media/yay.f6f6be2f26c400f254fb.png",
+    "static/media/anna-nosmile.jpg": "/static/media/anna-nosmile.1b423fa91c9c4dc82f1c.jpg",
+    "static/media/nikki-smile.jpg": "/static/media/nikki-smile.bd1d3d0ae881683288f1.jpg",
+    "static/media/together.jpg": "/static/media/together.1b626a9a2cfa2c3b6f42.jpg",
+    "index.html": "/index.html",
+    "main.6d793a86.css.map": "/static/css/main.6d793a86.css.map",
+    "main.817ba4c3.js.map": "/static/js/main.817ba4c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d793a86.css",
+    "static/js/main.817ba4c3.js"
+  ]
+}
